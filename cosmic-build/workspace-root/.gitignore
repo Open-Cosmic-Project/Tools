@@ -1,0 +1,23 @@
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Build artifacts
+*.o
+*.so
+*.a
+*.out
+build/
+out/
+.ninja_log
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sub-repositorios gestionados por repo
+kernel/linux/

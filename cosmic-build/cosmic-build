@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Wrapper de arranque para la CLI en Go de cosmic-build
+# Si el binario de Go no existe, lo compila en <1s y lo ejecuta transparentemente.
+#
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+BIN_PATH="$SCRIPT_DIR/bin/cosmic-build"
+SRC_PATH="$SCRIPT_DIR/cmd/cosmic-build/main.go"
+
+# Si el binario no existe o la fuente es más reciente, compilarlo con Go
+if [ ! -f "$BIN_PATH" ] || [ "$SRC_PATH" -nt "$BIN_PATH" ]; then
+    mkdir -p "$SCRIPT_DIR/bin"
+    (cd "$SCRIPT_DIR" && go build -ldflags="-s -w" -o "$BIN_PATH" ./cmd/cosmic-build)
+fi
+
+exec "$BIN_PATH" "$@"

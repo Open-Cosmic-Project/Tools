@@ -1,0 +1,13 @@
+[package]
+name = "cosmic-fastboot"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Herramienta de flasheo y gestión OEM para dispositivos CosmicOS"
+
+[dependencies]
+cosmic-usb = { path = "../../libs/cosmic-usb" }
+log = { workspace = true }
+env_logger = { workspace = true }
+thiserror = { workspace = true }

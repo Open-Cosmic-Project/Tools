@@ -1,0 +1,24 @@
+# CosmicOS — Ninja Build Rules
+# Motor de compilación rápido para CosmicOS (sin Python)
+
+rule cargo_package
+  command = cargo build --release -p $package
+  description = CARGO (Rust) $package
+  pool = console
+
+rule go_build
+  command = cd $source_dir && go build -ldflags="-s -w" -o $out .
+  description = GO (Orquestador) $out
+
+rule kernel_config
+  command = cp $config_file $kernel_dir/.config && make -C $kernel_dir ARCH=$arch olddefconfig
+  description = KCONFIG $arch
+
+rule kernel_image
+  command = make -C $kernel_dir ARCH=$arch CROSS_COMPILE=$cross Image.gz -j$jobs
+  description = KERNEL (Linux $arch) $out
+
+# Regla para compilar binario C++ (motor de logs)
+rule cpp_binary
+  command = g++ -std=c++17 -O2 -pthread $in -o $out
+  description = C++ (Log Engine) $out

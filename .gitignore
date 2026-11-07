@@ -1,0 +1,14 @@
+# Editores y sistema
+*~
+*.swp
+.vscode/
+.idea/
+.DS_Store
+
+# Rust
+target/
+
+# Binarios compilados (anclado a la raíz del repo: no afecta a cosmic-build/bin/)
+/bin/
+*.o
+/cosmic-build/bin/

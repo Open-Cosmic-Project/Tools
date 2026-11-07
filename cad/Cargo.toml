@@ -1,0 +1,13 @@
+[package]
+name = "cad"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "CosmicOS Advance Driver — herramienta de comunicación con dispositivos CosmicOS"
+
+[dependencies]
+cosmic-usb = { path = "../../libs/cosmic-usb" }
+log = { workspace = true }
+env_logger = { workspace = true }
+thiserror = { workspace = true }

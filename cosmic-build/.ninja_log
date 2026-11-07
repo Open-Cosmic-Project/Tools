@@ -1,0 +1,20 @@
+# ninja log v7
+0	34	1794015242515867859	/home/angelito/Dev/OpenCosmicProject/out/arm64-phone/bin/corchd	5f3a026f62a0bd3
+0	87	1794015242515010875	/home/angelito/Dev/OpenCosmicProject/target/release/cinitd	28b08b60ee36bafb
+87	116	1794015242602009204	/home/angelito/Dev/OpenCosmicProject/target/release/kernel-root	87f8aa2573c73fb5
+116	145	1794015242631008646	/home/angelito/Dev/OpenCosmicProject/target/release/clauncher	5ccb706d343b487e
+145	175	1794015242660008089	/home/angelito/Dev/OpenCosmicProject/target/release/sps	b1d3129e5eaa06e3
+175	202	1794015242690007513	/home/angelito/Dev/OpenCosmicProject/target/release/cosmic-repo	6f3fa702d411bdd1
+0	31	1794019512242956894	/home/angelito/Dev/OpenCosmicProject/out/arm64-phone/bin/corchd	5f3a026f62a0bd3
+0	80	1794019512242863340	/home/angelito/Dev/OpenCosmicProject/target/release/cinitd	28b08b60ee36bafb
+80	109	1794019512321315659	/home/angelito/Dev/OpenCosmicProject/target/release/kernel-root	87f8aa2573c73fb5
+109	137	1794019512350315264	/home/angelito/Dev/OpenCosmicProject/target/release/clauncher	5ccb706d343b487e
+137	166	1794019512378314882	/home/angelito/Dev/OpenCosmicProject/target/release/sps	b1d3129e5eaa06e3
+166	196	1794019512407314487	/home/angelito/Dev/OpenCosmicProject/target/release/cosmic-repo	6f3fa702d411bdd1
+0	30	1794019549537842270	/home/angelito/Dev/OpenCosmicProject/target/release/cinitd	28b08b60ee36bafb
+0	31	1794019549537962527	/home/angelito/Dev/OpenCosmicProject/out/arm64-phone/bin/corchd	5f3a026f62a0bd3
+30	60	1794019549566808303	/home/angelito/Dev/OpenCosmicProject/target/release/kernel-root	87f8aa2573c73fb5
+60	88	1794019549596807895	/home/angelito/Dev/OpenCosmicProject/target/release/clauncher	5ccb706d343b487e
+88	120	1794019549624807514	/home/angelito/Dev/OpenCosmicProject/target/release/sps	b1d3129e5eaa06e3
+120	156	1794019549656807078	/home/angelito/Dev/OpenCosmicProject/target/release/cosmic-repo	6f3fa702d411bdd1
+0	330	1794019549536808712	/home/angelito/Dev/OpenCosmicProject/out/arm64-phone/bin/logengine	d88d392422590036
