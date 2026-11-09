@@ -1,44 +1,44 @@
 [workspace]
 resolver = "2"
 members = [
-    "libs/cosmic-core",
-    "libs/cosmic-usb",
-    "core/cinitd",
-    "core/kernel.root",
-    "core/clauncher",
-    "core/cdevd",
-    "daemons/clogd",
-    "daemons/cnotifd",
-    "daemons/cpushd",
-    "daemons/cbrokerd",
-    "daemons/cpowerd",
-    "daemons/csettingsd",
-    "daemons/cupdated",
-    "daemons/cfronterad",
-    "ui/phanteonwm",
-    "ui/cboard",
-    "ui/cosmic-splash",
-    "pkg/sps",
-    "tools/cosmic-flash",
-    "tools/cosmic-repo",
-    "tools/cad",
-    "tools/fastboot",
-    "sdk/cosmic-sdk",
+  "libs/cosmic-core",
+  "libs/cosmic-usb",
+  "core/cinitd",
+  "core/kernel.root",
+  "core/clauncher",
+  "core/cdevd",
+  "daemons/clogd",
+  "daemons/cnotifd",
+  "daemons/cpushd",
+  "daemons/cbrokerd",
+  "daemons/cpowerd",
+  "daemons/csettingsd",
+  "daemons/cupdated",
+  "daemons/cfronterad",
+  "ui/phanteonwm",
+  "ui/cboard",
+  "ui/cosmic-splash",
+  "pkg/sps",
+  "tools/cosmic-flash",
+  "tools/cosmic-repo",
+  "tools/cad",
+  "tools/fastboot",
+  "sdk/cosmic-sdk",
 ]
 
 # Hito 1 acordado (CosmicOS v0.2.8 / 7.7)
 default-members = [
-    "core/cinitd",
-    "core/kernel.root",
-    "core/clauncher",
-    "pkg/sps",
-    "libs/cosmic-core",
-    "tools/cosmic-repo",
+  "core/cinitd",
+  "core/kernel.root",
+  "core/clauncher",
+  "pkg/sps",
+  "libs/cosmic-core",
+  "tools/cosmic-repo",
 ]
 
 [workspace.package]
 version = "0.0.1"
-edition = "2024"
+edition.workspace = true
 authors = ["OpenCosmicProject Contributors"]
 license = "GPL-3.0-or-later"
 repository = "https://github.com/OpenCosmicProject"
@@ -48,7 +48,14 @@ cosmic-core = { path = "libs/cosmic-core" }
 cosmic-usb = { path = "libs/cosmic-usb" }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-nix = { version = "0.29", features = ["process", "socket", "user", "signal", "mount", "fs"] }
+nix = { version = "0.29", features = [
+  "process",
+  "socket",
+  "user",
+  "signal",
+  "mount",
+  "fs",
+] }
 thiserror = "2.0"
 log = "0.4"
 env_logger = "0.11"
